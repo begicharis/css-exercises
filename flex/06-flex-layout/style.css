@@ -16,6 +16,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 7px;
 }
 
 input {
@@ -24,4 +25,92 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eeeeee;
+}
+
+.header .left-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.header .right-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.footer .left-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.footer .right-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.footer .left-links li,
+.footer .right-links li {
+  list-style: none; /* remove bullet points */
+  margin-right: 16px; /* add spacing between links */
+}
+
+.footer .left-links li a,
+.footer .right-links li a {
+  text-decoration: none; /* remove underline */
+  color: gray; /* set font color to gray */
+}
+
+.header .left-links li,
+.header .right-links li {
+  list-style: none; /* remove bullet points */
+  margin-right: 16px; /* add spacing between links */
+}
+
+.header .left-links li a,
+.header .right-links li a {
+  text-decoration: none; /* remove underline */
+  color: gray; /* set font color to gray */
 }
